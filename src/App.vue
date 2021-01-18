@@ -1,18 +1,17 @@
 <template>
   <div>
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Hello Vue 3 + Vite" />
+    <Entry/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import Entry from '/@/components/Entry.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    Entry
   }
 });
 </script>
@@ -24,6 +23,5 @@ export default defineComponent({
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

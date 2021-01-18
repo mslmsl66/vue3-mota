@@ -6,20 +6,24 @@ module.exports = {
 	},
 	'extends': [
 		'eslint:recommended',
-		'plugin:vue/essential'
+		'plugin:vue/essential',
+    'plugin:@typescript-eslint/recommended',
 	],
 	'globals': {
 		'Atomics': 'readonly',
 		'SharedArrayBuffer': 'readonly'
 	},
-	"parser": "babel-eslint",
+	// "parser": "babel-eslint",
 	"parser": "vue-eslint-parser",
+	// "parser": "@typescript-eslint/parser",
 	'parserOptions': {
-		"parser": "babel-eslint",
-		'sourceType': 'module'
+		// "parser": "babel-eslint",
+		// 'sourceType': 'module'
+		"parser": "@typescript-eslint/parser"
 	},
 	'plugins': [
-		'vue'
+		'vue',
+		'@typescript-eslint',
 	],
 	'rules': {
 		'indent': [
